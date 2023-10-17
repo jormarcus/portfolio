@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { links } from '@/src/app/lib/data';
+import { links } from '@/src/lib/data';
 import Link from 'next/link';
 
 interface headerProps {}
