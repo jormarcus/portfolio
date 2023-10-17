@@ -1,10 +1,8 @@
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
-import { FaReact } from 'react-icons/fa';
-import { LuGraduationCap } from 'react-icons/lu';
-import corpcommentImg from '@/public/images/corpcomment.png';
-import rmtdevImg from '@/public/images/rmtdev.png';
-import wordanalyticsImg from '@/public/images/wordanalytics.png';
+import { FaGlobeAmericas, FaMobileAlt, FaReact } from 'react-icons/fa';
+import { TbDeviceDesktopDollar } from 'react-icons/tb';
+import baikePreviewImage from '@/public/images/baike-preview.png';
 
 export const links = [
   {
@@ -35,52 +33,46 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
+    title: 'Associate Application Developer',
+    location: 'Parsippany, NJ',
     description:
-      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
-    icon: React.createElement(LuGraduationCap),
-    date: '2019',
-  },
-  {
-    title: 'Front-End Developer',
-    location: 'Orlando, FL',
-    description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
+      'I worked as a full-stack developer for 1 year. I used Typescript, React and Redux on the frontend and Java, Spring Boot, Hibernate, and Oracle on the backend.',
     icon: React.createElement(CgWorkAlt),
-    date: '2019 - 2021',
+    date: '2018 - 2020',
   },
   {
-    title: 'Full-Stack Developer',
-    location: 'Houston, TX',
+    title: 'Application Developer',
+    location: 'Parsippany, NJ',
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: '2021 - present',
+      'I continued working as a full-stack web developer. My largest project was a global payroll platform that allowed users to manage the payrolls for employees in over 100 countries. I also began mentoring and performing code reviews for other teammembers.',
+    icon: React.createElement(FaGlobeAmericas),
+    date: '2020 - 2022',
+  },
+  {
+    title: 'Senior Application Developer',
+    location: 'Parsippany, NJ',
+    description:
+      "I worked as a senior developer building out ADP's new payroll dashboard. This product would be used by over 10,000 live clients.",
+    icon: React.createElement(TbDeviceDesktopDollar),
+    date: '2022 - 2022',
+  },
+  {
+    title: 'Software Engineer',
+    location: 'Remote, United States',
+    description:
+      'I worked as a full-stack and mobile developer for a sports based social media company. I used React Native, Node.js, Express, and Sequelize for the mobile application, where my key achievement was delivering a real-time chat. I also used React, Next.js, TypeScript, Tailwind, to build user profile pages for the web application.',
+    icon: React.createElement(FaMobileAlt),
+    date: '2022 - 2023',
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: 'CorpComment',
+    title: 'Baike',
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: 'rmtDev',
-    description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: 'Word Analytics',
-    description:
-      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-    imageUrl: wordanalyticsImg,
+      'An app to find, organize, and import recipes. Users can chat with an AI bot to get recipes, create new recipes, or answer recipe/cooking related questions.',
+    tags: ['React', 'Next.js', 'Postgres', 'Tailwind', 'Prisma'],
+    imageUrl: baikePreviewImage,
   },
 ] as const;
 
@@ -90,18 +82,25 @@ export const skillsData = [
   'JavaScript',
   'TypeScript',
   'React',
+  'React Native',
   'Next.js',
   'Node.js',
   'Git',
   'Tailwind',
   'Prisma',
-  'MongoDB',
+  'Sequelize',
   'Redux',
-  'GraphQL',
-  'Apollo',
+  'Java',
+  'Spring Boot',
+  'Hibernate',
   'Express',
   'PostgreSQL',
-  'Python',
-  'Django',
+  'Oracle',
+  'MongoDB',
+  'Redis',
+  'Kafka',
   'Framer Motion',
+  'AWS S3',
+  'AWS Lambda',
+  'Docker',
 ] as const;
