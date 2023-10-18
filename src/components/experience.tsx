@@ -54,7 +54,7 @@ const TimelineElement: React.FC<TimelineElementProps> = ({ item }) => {
 };
 
 const Experience = () => {
-  const { ref, inView } = useSectionInView('Experience', 0.5, true);
+  const { ref } = useSectionInView('Experience', 0.5);
 
   return (
     <section ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
