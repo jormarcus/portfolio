@@ -10,16 +10,18 @@ import { experiencesData } from '../lib/data';
 import React from 'react';
 import { useSectionInView } from '../lib/hooks';
 import { useInView } from 'react-intersection-observer';
+import { useTheme } from 'next-themes';
 
 type TimelineElementProps = {
   item: (typeof experiencesData)[number];
+  theme: string | undefined;
 };
 
-const TimelineElement: React.FC<TimelineElementProps> = ({ item }) => {
+const TimelineElement: React.FC<TimelineElementProps> = ({ item, theme }) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
-  const theme = 'light';
+
   return (
     <div ref={ref} className="vertical-timeline-element">
       <VerticalTimelineElement
@@ -47,7 +49,9 @@ const TimelineElement: React.FC<TimelineElementProps> = ({ item }) => {
       >
         <h4 className="font-semibold">{item.title}</h4>
         <p className="!mt-0 font-normal">{item.location}</p>
-        <p className="!mt-1 !font-normal text-zinc-700">{item.description}</p>
+        <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+          {item.description}
+        </p>
       </VerticalTimelineElement>
     </div>
   );
@@ -55,13 +59,14 @@ const TimelineElement: React.FC<TimelineElementProps> = ({ item }) => {
 
 const Experience = () => {
   const { ref } = useSectionInView('Experience', 0.5);
+  const { theme } = useTheme();
 
   return (
     <section ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
-          <TimelineElement key={index} item={item} />
+          <TimelineElement key={index} item={item} theme={theme} />
         ))}
       </VerticalTimeline>
     </section>
