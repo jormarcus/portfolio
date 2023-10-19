@@ -11,6 +11,7 @@ import React from 'react';
 import { useSectionInView } from '../lib/hooks';
 import { useInView } from 'react-intersection-observer';
 import { useTheme } from 'next-themes';
+import CompanyLogo from './company-logo';
 
 type TimelineElementProps = {
   item: (typeof experiencesData)[number];
@@ -40,15 +41,16 @@ const TimelineElement: React.FC<TimelineElementProps> = ({ item, theme }) => {
               : '0.4rem solid rgba(255, 255, 255, 0.5)',
         }}
         date={item.date}
-        icon={item.icon}
+        icon={<CompanyLogo company={item.company} />}
         iconStyle={{
           background: theme === 'light' ? 'white' : 'rgba(255, 255, 255, 0.15)',
           fontSize: '1.5rem',
         }}
         visible={inView}
       >
-        <h4 className="font-semibold">{item.title}</h4>
-        <p className="!mt-0 font-normal">{item.location}</p>
+        <h3 className="font-semibold text-xl">{item.company}</h3>
+        <h4 className="font-normal">{item.title}</h4>
+        <p className="!mt-0 font-normal italic">{item.location}</p>
         <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
           {item.description}
         </p>

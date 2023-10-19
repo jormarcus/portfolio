@@ -1,7 +1,3 @@
-import React from 'react';
-import { CgWorkAlt } from 'react-icons/cg';
-import { FaGlobeAmericas, FaMobileAlt, FaReact } from 'react-icons/fa';
-import { TbDeviceDesktopDollar } from 'react-icons/tb';
 import baikePreviewImage from '@/public/images/baike-preview.png';
 
 export const links = [
@@ -37,32 +33,32 @@ export const experiencesData = [
     location: 'Parsippany, NJ',
     description:
       'I worked as a full-stack developer for 1 year. I used Typescript, React and Redux on the frontend and Java, Spring Boot, Hibernate, and Oracle on the backend.',
-    icon: React.createElement(CgWorkAlt),
     date: '2018 - 2020',
+    company: 'ADP',
   },
   {
     title: 'Application Developer',
     location: 'Parsippany, NJ',
     description:
       'I continued working as a full-stack web developer. My largest project was a global payroll platform that allowed users to manage the payrolls for employees in over 100 countries. I also began mentoring and performing code reviews for other teammembers.',
-    icon: React.createElement(FaGlobeAmericas),
     date: '2020 - 2022',
+    company: 'ADP',
   },
   {
     title: 'Senior Application Developer',
     location: 'Parsippany, NJ',
     description:
       "I worked as a senior developer building out ADP's new payroll dashboard. This product would be used by over 10,000 live clients.",
-    icon: React.createElement(TbDeviceDesktopDollar),
     date: '2022 - 2022',
+    company: 'ADP',
   },
   {
     title: 'Software Engineer',
     location: 'Remote, United States',
     description:
       'I worked as a full-stack and mobile developer for a sports based social media company. I used React Native, Node.js, Express, and Sequelize for the mobile application, where my key achievement was delivering a real-time chat. I also used React, Next.js, TypeScript, Tailwind, to build user profile pages for the web application.',
-    icon: React.createElement(FaMobileAlt),
     date: '2022 - 2023',
+    company: 'VarsityLink',
   },
 ] as const;
 
