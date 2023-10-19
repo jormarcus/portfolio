@@ -22,14 +22,13 @@ const About = () => {
         After graduating with a degree in{' '}
         <span className="font-medium">Economics</span>, I decided to pursue my
         passion for programming. I enrolled in a coding bootcamp and learned{' '}
-        <span className="font-medium">full-stack web development</span>.{' '}
-        <span className="italic">My favorite part of programming</span> is
-        building new products. My core stack is{' '}
+        <span className="font-medium">full-stack web development</span>. My core
+        stack is{' '}
         <span className="font-medium">
           Typescript, React, Next.js, Node.js, Java, and PostgresSQL
         </span>
         . I am also familiar with React Native. I am always looking to learn new
-        technologies. I am currently looking for a{' '}
+        technologies. I am currently seeking a{' '}
         <span className="font-medium">full-time position</span> as a software
         developer.
       </p>
