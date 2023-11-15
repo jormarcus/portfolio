@@ -51,9 +51,14 @@ const TimelineElement: React.FC<TimelineElementProps> = ({ item, theme }) => {
         <h3 className="font-semibold text-xl">{item.company}</h3>
         <h4 className="font-normal">{item.title}</h4>
         <p className="!mt-0 font-normal italic">{item.location}</p>
-        <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-          {item.description}
-        </p>
+
+        <ul className="!mt-1 !font-normal text-gray-700 dark:text-white/75 pl-5">
+          {item.description.map((el) => (
+            <li key={crypto.randomUUID()} className="list-disc py-1">
+              {el}
+            </li>
+          ))}
+        </ul>
       </VerticalTimelineElement>
     </div>
   );

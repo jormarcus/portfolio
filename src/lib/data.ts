@@ -29,36 +29,45 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Associate Application Developer',
+    title: 'Senior Software Engineer',
+    location: 'Remote, United States',
+    description: [
+      'Led development for a college sports recruiting social media application by writing RESTful APIs in Node.js with a Postgres database and a Redis cache',
+      'Added real-time chat functionality to a mobile React Native application by integrating GetStream, a third-party chat SDK, significantly reducing latency, and enhancing user experience',
+      'Developed an interface to input and display user profiles and dynamic statistics for various sports in a React Next.js web application',
+    ],
+    date: '2022 - 2023',
+    company: 'VarsityLink',
+  },
+  {
+    title: 'Senior Application Developer',
     location: 'Parsippany, NJ',
-    description:
-      'I worked as a full-stack developer for 1 year. I used Typescript, React and Redux on the frontend and Java, Spring Boot, Hibernate, and Oracle on the backend.',
-    date: '2018 - 2020',
+    description: [
+      "Collaborated with stakeholders and led development for the redesign and enhancement of ADP's main payroll platform used by over 10,000 live clients",
+      "Designed and implemented an event driven, distributed service to integrate a third-party insurance product with ADP's payroll process, saving users thousands of hours of manual work",
+    ],
+    date: '2022 - 2022',
     company: 'ADP',
   },
   {
     title: 'Application Developer',
     location: 'Parsippany, NJ',
-    description:
-      'I continued working as a full-stack web developer. My largest project was a global payroll platform that allowed users to manage the payrolls for employees in over 100 countries. I also began mentoring and performing code reviews for other teammembers.',
+    description: [
+      'Wrote RESTful APIs with Java and Spring Boot and led UI development for a flagship product providing global payroll processing for more than 100 countries',
+      'Mentored junior team members, providing technical expertise, code reviews, and constructive feedback to foster their professional growth',
+    ],
     date: '2020 - 2022',
     company: 'ADP',
   },
   {
-    title: 'Senior Application Developer',
+    title: 'Associate Application Developer',
     location: 'Parsippany, NJ',
-    description:
-      "I worked as a senior developer building out ADP's new payroll dashboard. This product would be used by over 10,000 live clients.",
-    date: '2022 - 2022',
+    description: [
+      'Debugged and fixed software issues, identifying root causes and implementing timely solutions',
+      'Wrote clean, well-documented, unit-tested code using Typescript, React, Redux and Java, following established coding standards and best practices',
+    ],
+    date: '2018 - 2020',
     company: 'ADP',
-  },
-  {
-    title: 'Software Engineer',
-    location: 'Remote, United States',
-    description:
-      'I worked as a full-stack and mobile developer for a sports based social media company. I used React Native, Node.js, Express, and Sequelize for the mobile application, where my key achievement was delivering a real-time chat. I also used React, Next.js, TypeScript, Tailwind, to build user profile pages for the web application.',
-    date: '2022 - 2023',
-    company: 'VarsityLink',
   },
 ] as const;
 
@@ -66,7 +75,7 @@ export const projectsData = [
   {
     title: 'Baike',
     description:
-      'An app to find, organize, and import recipes. Users can chat with an AI bot to get recipes, create new recipes, or answer recipe/cooking related questions.',
+      'An app to find, organize, and import recipes. Users can chat with an AI bot to get recipes, create new recipes, or to answer questions related to food, recipes, or cooking.',
     tags: ['React', 'Next.js', 'Postgres', 'Tailwind', 'Prisma'],
     imageUrl: baikePreviewImage,
   },
