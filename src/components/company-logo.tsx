@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-type CompanyType = 'ADP' | 'VarsityLink';
+type CompanyType = 'ADP' | 'HiLyte';
 
 interface CompanyLogoProps {
   company: CompanyType;
