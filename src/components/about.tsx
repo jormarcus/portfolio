@@ -32,10 +32,10 @@ const About = () => {
         &apos;s main payroll application and an innovative product that allows
         payrolls from 100+ countries to be run from a single system of record. I
         wanted a new challenge and began a role at{' '}
-        <span className="font-medium">VarsityLink</span>, a startup building a
-        social media application with the mission to help high school athletes
-        get recruited for college sports. One of the core features I worked on
-        was a real-time chat built with React Native and Node.js.
+        <span className="font-medium">HiLyte</span>, a startup building a social
+        media application with the mission to help high school athletes get
+        recruited for college sports. One of the core features I worked on was a
+        real-time chat built with React Native and Node.js.
       </p>
       <p className="mb-3">
         My core stack is{' '}

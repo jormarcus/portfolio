@@ -37,7 +37,7 @@ export const experiencesData = [
       'Developed an interface to input and display user profiles and dynamic statistics for various sports in a React Next.js web application',
     ],
     date: '2022 - 2023',
-    company: 'VarsityLink',
+    company: 'HiLyte',
   },
   {
     title: 'Senior Application Developer',

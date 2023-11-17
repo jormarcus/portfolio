@@ -12,7 +12,7 @@ const CompanyLogo: React.FC<CompanyLogoProps> = ({ company }) => {
       src={
         company === 'ADP'
           ? '/images/adp_logo.svg'
-          : '/images/varsitylink_logo.png'
+          : '/images/hilyteapp_logo.jpeg'
       }
       alt="adp logo"
       fill
